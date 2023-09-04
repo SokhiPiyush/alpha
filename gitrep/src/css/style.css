@@ -32,9 +32,9 @@ body{
     background-color: black;
 
 }
-.img-container {
+/* .img-container { */
     /* background-color: beige; */
-}
+/* } */
 
 .singup-content {
     height: 100%;
@@ -101,7 +101,9 @@ body{
     width: 40%;
     cursor: pointer;
     text-decoration: none;
+    margin: 1.5rem;
     /* mix-blend-mode: difference; */
+    border: none;
 }
 
 /* .other-btn {

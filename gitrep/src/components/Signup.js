@@ -37,7 +37,7 @@ const Signup = () => {
 
                         <div className="signup-form">
                             <h2 className="form-title">Sign Up</h2>
-                            <form action="" className="register-form" id='register-form'>
+                            <form action="/login" className="register-form" id='register-form' method='post'>
                                 <div className="form-group">
                                     <label htmlFor="name">
                                         <i class="zmdi zmdi-account material-icons-name"></i>
@@ -75,9 +75,15 @@ const Signup = () => {
                                     <input type="password" name='cPass' autoComplete='off' id='cPass' placeholder='Confirm Password' />
                                 </div>
 
+                                   <div>
+                                    <button type="submit" class="form-btn" name="signup-button">SIGN UP</button>
+
+                                   </div>     
+
+
                                 <div >
                                     {/* <input type="submit" name='signup' id='signup' value='Register' className='form-submit' /> */}
-                                    <Link to="/" className="form-btn" >LOGIN?</Link>
+                                    <Link to="/" className="form-btn" method="get" >LOGIN ?</Link>
                                 </div>
                             </form>
                             {/* <div className="other-btn">

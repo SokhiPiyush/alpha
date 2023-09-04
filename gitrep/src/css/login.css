@@ -84,4 +84,16 @@ body{
     cursor: pointer;
     text-decoration: none;
     mix-blend-mode: difference;
+    border: none;
+}
+.signup-but{
+    color:  rgb(236, 255, 255);
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: 10px;
+    cursor: pointer;
+    border: none;
+
+
 }
