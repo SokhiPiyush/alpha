@@ -6,7 +6,7 @@ import {
     Switch,
     Route,
     Link
-  } from "react-router-dom";
+} from "react-router-dom";
 import "../css/style.css";
 
 
@@ -19,7 +19,7 @@ const Signup = () => {
     ];
 
     const containerStyles = {
-        width : "100%",
+        width: "100%",
         height: "100%",
         margin: "auto 80%",
     };
@@ -31,61 +31,77 @@ const Signup = () => {
 
                         <div className="signup-img">
                             <div className='img-container'>
-                            <ImageSlider slides={slides}/>
+                                <ImageSlider slides={slides} />
                             </div>
                         </div>
 
                         <div className="signup-form">
                             <h2 className="form-title">Sign Up</h2>
                             <form action="/login" className="register-form" id='register-form' method='post'>
-                                <div className="form-group">
-                                    <label htmlFor="name">
-                                        <i class="zmdi zmdi-account material-icons-name"></i>
-                                    </label>
-                                    <input type="text" name='name' autoComplete='off' id='name' placeholder='Your Name' />
-                                </div>
+    <div className="form-group">
+        <label htmlFor="name">
+            <i className="zmdi zmdi-account material-icons-name"></i>
+        </label>
+        <input type="text" name='name' autoComplete='off' id='name' placeholder='Your Name' />
+    </div>
 
-                                <div className="form-group">
-                                    <label htmlFor="college">
-                                        <i class="zmdi zmdi-home material-icons-name"></i>
-                                    </label>
-                                    <input type="text" name='college' autoComplete='off' id='college' placeholder='Your College' />
-                                </div>
+    <div className="form-group">
+        <label htmlFor="age">
+            <i className="zmdi zmdi-calendar material-icons-name"></i>
+        </label>
+        <input type="number" name='age' autoComplete='off' id='age' placeholder='Your Age' />
+    </div>
 
-                                <div className="form-group">
-                                    <label htmlFor="email">
-                                        <i class="zmdi zmdi-email material-icons-name"></i>
-                                    </label>
-                                    <input type="email" name='email' autoComplete='off' id='email' placeholder='Your Email' />
-                                </div>
+    <div className="form-group">
+        <label htmlFor="country">
+            <i className="zmdi zmdi-globe material-icons-name"></i>
+        </label>
+        <input type="text" name='country' autoComplete='off' id='country' placeholder='Your Country' />
+    </div>
 
+    <div className="form-group">
+        <label htmlFor="email">
+            <i className="zmdi zmdi-email material-icons-name"></i>
+        </label>
+        <input type="email" name='email' autoComplete='off' id='email' placeholder='Your Email' />
+    </div>
 
-
-                                <div className="form-group">
-                                    <label htmlFor="password">
-                                        <i class="zmdi zmdi-lock material-icons-name"></i>
-                                    </label>
-                                    <input type="password" name='name' autoComplete='off' id='password' placeholder='password' />
-                                </div>
-
-                                <div className="form-group">
-                                    <label htmlFor="cPass">
-                                        <i class="zmdi zmdi-lock material-icons-name"></i>
-                                    </label>
-                                    <input type="password" name='cPass' autoComplete='off' id='cPass' placeholder='Confirm Password' />
-                                </div>
-
-                                   <div>
-                                    <button type="submit" class="form-btn" name="signup-button">SIGN UP</button>
-
-                                   </div>     
+    <div className="form-group">
+        <label htmlFor="password">
+            <i className="zmdi zmdi-lock material-icons-name"></i>
+        </label>
+        <input type="password" name='password' autoComplete='off' id='password' placeholder='Password' />
+    </div>
 
 
-                                <div >
-                                    {/* <input type="submit" name='signup' id='signup' value='Register' className='form-submit' /> */}
-                                    <Link to="/" className="form-btn" method="get" >LOGIN ?</Link>
-                                </div>
-                            </form>
+
+    <div className="form-group">
+        <label htmlFor="cPass">
+            <i className="zmdi zmdi-lock material-icons-name"></i>
+        </label>
+        <input type="password" name='cPass' autoComplete='off' id='cPass' placeholder='Confirm Password' />
+    </div>
+
+    <div className="form-group">
+        <label htmlFor="userType">
+            User Type:
+        </label>
+        <select name="userType" id="userType">
+            <option value="faculty">Faculty</option>
+            <option value="researcher">Researcher</option>
+            <option value="academician">Academician</option>
+        </select>
+    </div>
+
+    <div>
+        <button type="submit" className="form-btn" name="signup-button">SIGN UP</button>
+    </div>
+
+    <div>
+        <Link to="/" className="form-btn" method="get">LOGIN ?</Link>
+    </div>
+</form>
+
                             {/* <div className="other-btn">
                                 <a href=""><i class="zmdi zmdi-google material-icons-name"></i></a>
                                 <a href=""><i class="zmdi zmdi-facebook material-icons-name"></i></a>
